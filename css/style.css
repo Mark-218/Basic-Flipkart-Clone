@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txtcol:white;
+    --bgcol: #2874f0;
+}
+
+header{
+   
+    background-color:var(--bgcol);
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 125px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+    
+   
+}
+
+nav ul li a{
+    color: var(--txtcol);
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+   /* color: #2874f0; */
+    font-weight: bold;
+
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    
+}
+
+.search input{
+    width:30vw;
+    height:27px ;
+    border-radius: 2px;
+    margin: 0 12px 0 50px;
+    padding: 0 12px;
+}
+
+.container{
+ min-height: calc(100vh - 58px - 10vh);
+}
+
+.slider{
+    
+   margin: auto; 
+   width: 80vw;
+   margin: 12px auto ;
+   overflow: hidden;
+}
+
+.card{
+   max-width: 91vw;
+   margin:  auto;
+
+}
+
+.cards{
+    display: flex ;
+    /* justify-content: center; */
+    overflow: hidden;
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 14px 15px;
+}
+
+.card h2{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+footer{
+    height: 10vh;
+    background-color: var(--bgcol);
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
